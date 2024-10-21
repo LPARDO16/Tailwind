@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Productos - Tienda de Tecnología</title>
+</head>
+<body>
+    <nav style="background-color: rgb(16, 199, 181);">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-20 items-center justify-between"> <!-- Aumenta la altura del navbar -->
+                <div class="flex flex-1 items-center justify-between">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-16" src="../images/logoMTsinfondo.png" alt="Logo de la Tienda"> <!-- Mantiene el tamaño del logo -->
+                        </a>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="flex space-x-4">
+                            <a href="bienvenida.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Bienvenida</a>
+                            <a href="productos.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Productos</a>
+                            <a href="donde-nos-encontramos.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Dónde nos encontramos</a>
+                            <a href="enviar-mensaje.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Envíanos un mensaje</a>
+                            <a href="mision-vision.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Misión/Visión</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:hidden">
+                    <button class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu, show/hide based on menu state -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="bienvenida.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Bienvenida</a>
+                <a href="productos.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Productos</a>
+                <a href="donde-nos-encontramos.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Dónde nos encontramos</a>
+                <a href="enviar-mensaje.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Envíanos un mensaje</a>
+                <a href="mision-vision.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Misión/Visión</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('https://i.pinimg.com/736x/7a/1f/98/7a1f9851b74a9a93e7e483dc4a4f96b0.jpg');">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <h1 class="text-5xl text-center font-bold text-white relative z-10 pt-20">Nuestros Productos</h1>
+        <p class="text-center mt-4 text-white relative z-10">Explora nuestra amplia gama de productos tecnológicos.</p>
+    
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 pb-20"> <!-- Ajustar el espacio entre columnas -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://http2.mlstatic.com/D_Q_NP_752509-MLA74065590624_012024-O.webp" alt="Producto 1" class="w-full h-45 object-cover"> <!-- Ajustar la altura de la imagen -->
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Laptop Gamer MSI</h2>
+                    <p class="text-gray-600">$1,199.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61kUnVnEUTL._AC_UL210_SR210,210_.jpg" alt="Producto 2" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">iPad Mini 4</h2>
+                    <p class="text-gray-600">$130</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_902069-MEC76944529195_062024-T.webp" alt="Producto 3" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">PS4 PRO</h2>
+                    <p class="text-gray-600">$499.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://resources.claroshop.com/medios-plazavip/publicidad/626760d700de7_audifonos-anikuma-3jpg.jpg" alt="Producto 4" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Auriculares KUMA</h2>
+                    <p class="text-gray-600">$69.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://mobilestore.ec/wp-content/uploads/2023/11/MacBook-Pro-M3-Space-Gray-Mobile-Store-Ecuador.jpg" alt="Producto 5" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">MacBook Pro M3</h2>
+                    <p class="text-gray-600">$2299.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwsnRmVFpxYU-fnz_ePGV7wSVwd2Mm8frUg&s" alt="Producto 6" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Cámara Canon</h2>
+                    <p class="text-gray-600">$499.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpcmImBnaXyhmAvLnb4utEPbpJQGv8PzGhBQ&s" alt="Producto 7" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Laptop Dell Inspiron</h2>
+                    <p class="text-gray-600">$499.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_761947-MLA52383389020_112022-O.webp" alt="Producto 8" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Smartphone Samsung Galaxy S20</h2>
+                    <p class="text-gray-600">$699.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://www.lg.com/ec/images/monitores/md07528715/gallery/1100_01.jpg" alt="Producto 9" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Monitor LG 27"</h2>
+                    <p class="text-gray-600">$349.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://www.impormel.com/wp-content/uploads/2022/08/9295-Razer-Blackwidow-Te-Chroma-V2-Tkl-Teclado-Mecanico-Gaming.jpg" alt="Producto 10" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Teclado Mecánico Razer</h2>
+                    <p class="text-gray-600">$129.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://coretms.tecnomegastore.ec/assets/images/lg/20/MOULOG910005565-1-lg.webp" alt="Producto 11" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Ratón Logitech G502</h2>
+                    <p class="text-gray-600">$79.99</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img src="https://d22k5h68hofcrd.cloudfront.net/catalog/product/7/F/7FR21A-1_T1679656280.png" alt="Producto 12" class="w-full h-45 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Impresora HP DeskJet</h2>
+                    <p class="text-gray-600">$89.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

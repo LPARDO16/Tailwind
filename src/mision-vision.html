@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Misión y Visión - Tienda de Tecnología</title>
+    
+</head>
+<body style="background-image: url('https://i.pinimg.com/736x/7a/1f/98/7a1f9851b74a9a93e7e483dc4a4f96b0.jpg'); " class="relative w-full h-full bg-cover bg-center">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <nav style="background-color: rgb(16, 199, 181);">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-20 items-center justify-between"> <!-- Aumenta la altura del navbar -->
+                <div class="flex flex-1 items-center justify-between">
+                    <div class="flex-shrink-0">
+                        <a href="index.html">
+                            <img class="h-16" src="../images/logoMTsinfondo.png" alt="Logo de la Tienda"> <!-- Mantiene el tamaño del logo -->
+                        </a>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="flex space-x-4">
+                            <a href="bienvenida.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Bienvenida</a>
+                            <a href="productos.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Productos</a>
+                            <a href="donde-nos-encontramos.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Dónde nos encontramos</a>
+                            <a href="enviar-mensaje.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Envíanos un mensaje</a>
+                            <a href="mision-vision.html" class="text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Misión/Visión</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:hidden">
+                    <button class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu, show/hide based on menu state -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <a href="bienvenida.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Bienvenida</a>
+                <a href="productos.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Productos</a>
+                <a href="donde-nos-encontramos.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Dónde nos encontramos</a>
+                <a href="enviar-mensaje.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Envíanos un mensaje</a>
+                <a href="mision-vision.html" class="block text-white hover:bg-[rgb(10,180,160)] hover:text-white px-4 py-3 rounded-md text-lg font-medium">Misión/Visión</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="p-4 custom-background rounded-lg shadow-lg mt-10 relative z-10">
+            <h1 class="text-5xl text-center font-bold text-white animate__animated animate__fadeInDown">Nuestra Misión</h1>
+            <p class="text-center mt-4 text-white animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                Brindar productos tecnológicos de alta calidad a precios accesibles.
+            </p>
+            
+            <h1 class="text-5xl text-center font-bold text-white mt-8 animate__animated animate__fadeInDown" style="animation-delay: 0.4s;">Nuestra Visión</h1>
+            <p class="text-center mt-4 text-white animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                Ser la tienda de tecnología más confiable y reconocida de la región.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
